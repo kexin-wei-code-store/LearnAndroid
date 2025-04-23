@@ -92,7 +92,8 @@ fun UserListScreen(viewModel: UserViewModel = viewModel()) {
                 UserItem(
                     user = user,
                     onUserClick = { /* Handle click */ },
-                    onDeleteClick = { viewModel.deleteUser(user) }
+                    onDeleteClick = {
+                        viewModel.deleteUser(user) }
                 )
             }
         }
